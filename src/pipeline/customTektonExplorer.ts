@@ -167,8 +167,6 @@ export class CustomTektonExplorer implements TreeDataProvider<TektonNode>, Dispo
   getSelection(): TektonNode[] | undefined {
     return this.treeView.selection;
   }
-
-
 }
 
 export const customTektonExplorer = new CustomTektonExplorer();

@@ -9,7 +9,7 @@ import { debugTreeView } from './debug-tree-view';
 
 export class DebugExplorer implements TreeDataProvider<TektonNode>, Disposable {
 
-  private treeView: TreeView<TektonNode>;
+  treeView: TreeView<TektonNode>;
   private onDidChangeTreeDataEmitter: EventEmitter<TektonNode | undefined> = new EventEmitter<TektonNode | undefined>();
   readonly onDidChangeTreeData: Event<TektonNode | undefined> = this.onDidChangeTreeDataEmitter.event;
 
